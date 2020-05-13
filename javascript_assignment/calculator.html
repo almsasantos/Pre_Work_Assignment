@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Calculator</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+    <div class="calculator_container">
+      <form id="calculator">
+        <table>
+          <tr class="top">
+            <td>
+              <input type="text" placeholder="0" name="display" id="display" disabled/>
+            </td>
+          </tr>
+        </table>
+        <table class="down">
+          <tr>
+            <td><input type="button" name="button1" value="1" onclick="calculator.display.value +='1'"></td>
+            <td><input type="button" name="button2" value="2" onclick="calculator.display.value +='2'"></td>
+            <td><input type="button" name="button3" value="3" onclick="calculator.display.value +='3'"></td>
+            <td><input type="button" class="operator" name="add" value="+" onclick="calculator.display.value +='+'"></td>
+          </tr>
+          <tr>
+            <td><input type="button" name="button4" value="4" onclick="calculator.display.value +='4'"></td>
+            <td><input type="button" name="button5" value="5" onclick="calculator.display.value +='5'"></td>
+            <td><input type="button" name="button6" value="6" onclick="calculator.display.value +='6'"></td>
+            <td><input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value +='-'"></td>
+          </tr>
+          <tr>
+            <td><input type="button" name="button7" value="7" onclick="calculator.display.value +='7'"></td>
+            <td><input type="button" name="button8" value="8" onclick="calculator.display.value +='8'"></td>
+            <td><input type="button" name="button9" value="9" onclick="calculator.display.value +='9'"></td>
+            <td><input type="button" class="operator" name="multiply" value="x" onclick="calculator.display.value +='*'"></td>
+          </tr>
+          <tr>
+            <td><input type="button" id="screen" name="reset" value="c" onclick="resetScreen()"></td>
+            <td><input type="button" name="button0" value="0" onclick="calculator.display.value +='0'"></td>
+            <td><input type="button" name="equal" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+            <td><input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value +='/'"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script>
+      var screen = document.getElementById("screen");
+      function resetScreen(){
+        calculator.display.value = "";
+      }
+    </script>
+  </body>
+</html>

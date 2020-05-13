@@ -1,0 +1,36 @@
+body{
+  font-family: arial;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.calculator_container {
+  color: #FFF;
+  background-color: #D3D3D3;
+  text-align: center;
+  width: 340px;
+  height: 280px;
+  border: 1px solid #000000;
+  box-sizing: content-box;
+}
+
+input {
+  font-family: arial;
+  font-size: 19px;
+  background: #FFFFFF;
+  padding: 8px 15px 8px 15px; /* Top  Right  Bottom  Left */
+  border: 0.5px solid #000000;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+table {
+  padding: 10px 15px 8px 15px;
+  margin-top: 1px;
+  margin-left: 15px;
+  margin-bottom: 1px;
+}
+
+.down {
+  margin-left: 50px;
+}
